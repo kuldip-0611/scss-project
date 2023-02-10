@@ -4,7 +4,6 @@
 .section-merge{
     background-color:#ADD8E6;
     
-
     .bttn{   
         button{
            @include forBtn(white,$primary-color);
@@ -26,14 +25,18 @@
 
         
         .card-section-5{
+            width: 100%;
 
             .upper-5 img{
-                height: 150px;
-                width: 265px;
-                border-radius:10px 10px 0 0  ;
+                width: 100% !important;
+                
+                
+                border-radius:10px 10px 0 0 ;
             }
         }
         .lower-5{
+            width: 100%;
+           
             
             border-radius: 0px 0px 10px 10px;
             gap: 17px;
@@ -46,16 +49,9 @@
                 font-weight: map-get($map: $font-weight ,  $key: bold );
             }
         }
-        @media (max-width:320px) {
-            .card-section-5 img{
-                width: 225px !important;
-            }
-            
-        }
+      
     
     }
     
    
 }
-
-
